@@ -55,3 +55,9 @@ print("\nFinal weights:", w)
 print("Final bias:", b)
 print("Predictions after training:")
 print(y_pred)
+
+
+new_input = np.array([1,0])
+z = np.dot(new_input, w) + b
+y_new = 1 / (1 + np.exp(-z))
+print("Predicted output:", y_new)
